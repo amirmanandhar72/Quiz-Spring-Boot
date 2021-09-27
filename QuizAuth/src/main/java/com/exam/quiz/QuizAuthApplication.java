@@ -1,22 +1,12 @@
 package com.exam.quiz;
 
-import java.util.Set;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.exam.quiz.models.Role;
-import com.exam.quiz.models.User;
-import com.exam.quiz.models.UserRole;
-import com.exam.quiz.service.UserService;
-
 @SpringBootApplication
 public class QuizAuthApplication implements CommandLineRunner {
 
-	@Autowired
-	private UserService userService;
+	
 	public static void main(String[] args) {
 		SpringApplication.run(QuizAuthApplication.class, args);
 	}
